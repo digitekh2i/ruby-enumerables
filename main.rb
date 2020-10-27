@@ -70,4 +70,10 @@ module Enumerable
     true
   end
 
+  def my_map
+    temp_arr = []
+    self.my_each { |item| temp_arr.push(yield(item)) unless yield(item) == false }
+    temp_arr
+  end
+
 end
