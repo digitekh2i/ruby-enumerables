@@ -87,4 +87,20 @@ module Enumerable
     temp_arr
    end
    
+   def my_inject(accum = nil, sym = nil)
+    num = nil
+    self.my_each do |item|
+        if block_given?
+            accum = accum.nil? ? item : yield(accum, item)
+        else
+            case accum 
+            when Symbol 
+                num = num.nil? ? item : num.send(accum, item)
+            when Numeric
+                accum = accum.send(sym, item)
+            end 
+        end
+    end
+    num.nil? ? accum : num  
+   end
 end
