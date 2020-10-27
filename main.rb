@@ -70,10 +70,21 @@ module Enumerable
     true
   end
 
-  def my_map
+  def my_count(count = nil)
+    counter = 0
+     if block_given?
+        self.my_each { |item| counter += 1 if yield(item) == true} 
+        elsif count == nil
+            self.my_each {counter += 1}
+        else self.my_each { |item| counter += 1 if item == count}
+    end
+    counter
+   end
+
+   def my_map
     temp_arr = []
     self.my_each { |item| temp_arr.push(yield(item)) unless yield(item) == false }
     temp_arr
-  end
-
+   end
+   
 end
