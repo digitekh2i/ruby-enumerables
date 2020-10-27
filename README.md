@@ -8,7 +8,7 @@
 - Visual Studio Code, Git and Github.
 
 ## Live Demo
-[Live Demo Link]()
+[Live Demo Link](https://repl.it/repls/ImmaculateTurbulentNumbers)
 
 ## Authors
 
@@ -22,7 +22,7 @@
 
 - Github: [@Janluc](https://github.com/Janluc)   
 - Twitter: [@Janluc123](https://twitter.com/Janluc123)
-- Linkedin: [linkedin](https://www.linkedin.com/in/janluc-saneaux-91707a1b4/ 
+- Linkedin: [linkedin](https://www.linkedin.com/in/janluc-saneaux-91707a1b4/)
 
 
 ## 🤝 Contributing
