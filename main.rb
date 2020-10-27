@@ -57,7 +57,7 @@ module Enumerable
     elsif type.nil?
       my_each { |item| return true if item.nil? }
     else
-      my_each { |item| return true if item.instance_of?(type.class) || item.class.superclass == type || item.is_a?(type) }
+      my_each { |i| return true if i.instance_of?(type.class) || i.class.superclass == type || i.is_a?(type) }
     end
     false
   end
