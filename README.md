@@ -12,13 +12,13 @@
 
 ## Authors
 
-👤 **Author1**
+👤 **DAniel Oboko**
 
 - Github: [@digitekh2i](https://https://github.com/digitekh2i)
 - Twitter: [@ObokoDaniel](https://twitter.com/ObokoDaniel)
 - Linkedin: [linkedin](http://linkedin.com/in/daniel-dikachi-1luvtek101)
 
-👤 **Author2**
+👤 **Janluc Saneaux**
 
 - Github: [@Janluc](https://github.com/Janluc)   
 - Twitter: [@Janluc123](https://twitter.com/Janluc123)
