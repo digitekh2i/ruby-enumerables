@@ -8,7 +8,7 @@
 - Visual Studio Code, Git and Github.
 
 ## Live Demo
-[Live Demo Link](https://repl.it/repls/ImmaculateTurbulentNumbers)
+[Live Demo Link](https://repl.it/repls/ImmaculateTurbulentNumbers#main.rb)
 
 ## Authors
 
@@ -29,18 +29,9 @@
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/digitekh2i/ruby-enumerables/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
