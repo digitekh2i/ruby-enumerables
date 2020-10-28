@@ -5,9 +5,9 @@ module Enumerable
   def my_each
     counter = 0
     while counter < size
-      if instance_of(Hash) || instance_of?(Range)
-        new_hash = to_a
-        yield(new_hash[counter])
+      if instance_of?(Hash) || instance_of?(Range)
+        converted_hash = to_a
+        yield(converted_hash[counter])
       else
         yield(self[counter])
       end
@@ -18,7 +18,7 @@ module Enumerable
   def my_each_with_index
     counter = 0
     while counter < size
-      if instance_of(Hash) || instance_of?(Range)
+      if instance_of?(Hash) || instance_of?(Range)
         new_hash = to_a
         yield(new_hash[counter], counter)
       else
@@ -57,7 +57,7 @@ module Enumerable
     elsif type.nil?
       my_each { |item| return true if item.nil? }
     else
-      my_each { |i| return true if i.instance_of?(type.class) || i.class.superclass == type || i.is_a?(type) }
+      my_each { |item| return true if item.instance_of?(type.class) or item.class.superclass == type }
     end
     false
   end
@@ -68,7 +68,7 @@ module Enumerable
     elsif type.nil?
       my_each { |item| return false if item.nil? && item != false }
     else
-      my_each { |item| return false if item.instance_of?(type) || item.class.superclass == type || item.is_a?(type) }
+      my_each { |i| return false if i.instance_of?(type) || i.class.superclass == type || i.is_a?(type) }
     end
     true
   end
